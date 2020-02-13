@@ -24,7 +24,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+import {EDIT_TEXT} from 'react-native-dotenv';
+
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -60,9 +62,7 @@ const App: () => React$Node = () => {
             </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
+              <Text style={styles.sectionDescription}>{EDIT_TEXT}</Text>
             </View>
             <LearnMoreLinks />
           </View>
