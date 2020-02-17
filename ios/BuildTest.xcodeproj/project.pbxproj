@@ -293,7 +293,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = DEDQBH6J8S;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -629,7 +629,8 @@
 			baseConfigurationReference = 7A6C5F404CB0AD8C8F723D3C /* Pods-BuildTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = DEDQBH6J8S;
@@ -642,7 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BuildTestForBitRiseSoft;
 				PRODUCT_NAME = BuildTest;
-				PROVISIONING_PROFILE_SPECIFIER = BuildTestForBitRiseSoft;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -652,7 +653,8 @@
 			baseConfigurationReference = 896418F766D7F4E1690A64F5 /* Pods-BuildTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DEDQBH6J8S;
 				INFOPLIST_FILE = BuildTest/Info.plist;
@@ -664,7 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BuildTestForBitRiseSoft;
 				PRODUCT_NAME = BuildTest;
-				PROVISIONING_PROFILE_SPECIFIER = BuildTestForBitRiseSoft;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
