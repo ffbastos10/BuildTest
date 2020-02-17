@@ -1,0 +1,14 @@
+User defaults from command line:
+    IDEArchivePathOverride = /var/folders/mp/dk6fjxx52mj8sbnhyrbqp3qm0000gr/T/__codesigndoc__409531613/BuildTest.xcarchive
+
+note: Using new build system
+
+** CLEAN SUCCEEDED **
+
+note: Using new build system
+note: Planning build
+note: Constructing build description
+Build system information
+error: Signing for "BuildTest" requires a development team. Select a development team in the project editor. (in target 'BuildTest')
+
+** ARCHIVE FAILED **
