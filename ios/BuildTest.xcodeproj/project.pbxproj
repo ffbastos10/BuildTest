@@ -55,6 +55,7 @@
 		2D02E4901E0B4A5D006451C7 /* BuildTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BuildTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFFFAF5895E55C4F7B60CA7 /* libPods-BuildTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuildTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		421410A8BF0993E401560AD2 /* Pods-BuildTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BuildTestTests/Pods-BuildTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		550F41F023FB1AE800401DC4 /* BuildTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = BuildTest.entitlements; path = BuildTest/BuildTest.entitlements; sourceTree = "<group>"; };
 		7A6C5F404CB0AD8C8F723D3C /* Pods-BuildTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTest.debug.xcconfig"; path = "Target Support Files/Pods-BuildTest/Pods-BuildTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7B198584B38BEEE3C3501830 /* Pods-BuildTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTestTests.release.xcconfig"; path = "Target Support Files/Pods-BuildTestTests/Pods-BuildTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		896418F766D7F4E1690A64F5 /* Pods-BuildTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTest.release.xcconfig"; path = "Target Support Files/Pods-BuildTest/Pods-BuildTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		13B07FAE1A68108700A75B9A /* BuildTest */ = {
 			isa = PBXGroup;
 			children = (
+				550F41F023FB1AE800401DC4 /* BuildTest.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -294,6 +296,11 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = DEDQBH6J8S;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -374,7 +381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		1D5075E601E54717C1E34F98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -644,6 +651,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BuildTestForBitRiseSoft;
 				PRODUCT_NAME = BuildTest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -667,6 +675,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BuildTestForBitRiseSoft;
 				PRODUCT_NAME = BuildTest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
